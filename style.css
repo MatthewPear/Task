@@ -1,0 +1,48 @@
+/* .body {
+    text-align: center;
+}  */
+/* .container {
+    border: solid 1px #000;
+    height: 50px;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px 10px;
+    line-height: 20px;
+} */
+/* .button {
+    width: 150px;
+    color: blue;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+}  */
+.display {
+    height: 20px;
+    max-width: 300px;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px 10px;
+    line-height: 20px;
+    /* vertical-align: middle; */
+}
+.smallButton{
+    display: inline-block;
+    vertical-align: middle;
+} 
+ .square {
+    height: 10px;
+    width: auto;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px 10px;
+    line-height: 10px;
+    border: solid 1px #000;
+    background-color: rgb(224, 221, 221);
+}
+/* .color-0{
+    background-color: red;
+}
+.color-1{
+    background-color: blue;
+}
+
