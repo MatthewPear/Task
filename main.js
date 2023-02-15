@@ -72,9 +72,14 @@ console.log("Wynik 16 :", result16);
 const result17 = tablica17.filter(el => el * 3 > 15);
 console.log("Wynik 17 :", result17);
 
-for (let i = 1; i < 8; i++) { 
-    createContainer(i);
-}
+createContainer(1, tablica1, result1);
+createContainer(2, tablica2, result2);
+createContainer(3, tablica3, result3);
+createContainer(4, tablica4, result4);
+createContainer(5, tablica5, result5);
+createContainer(6, tablica6, result6);
+createContainer(7, tablica7, result7);
+
 
 const container8 = document.createElement('div');
 
@@ -121,9 +126,8 @@ const container8 = document.createElement('div');
     
 document.body.appendChild(container8);
 
-for (let i = 9; i < 11; i++) { 
-    createContainer(i);
-}
+createContainer(9, tablica9, result9);
+createContainer(10, tablica10, result10);
 
 const container11 = document.createElement('div');
 
@@ -175,9 +179,9 @@ const container11 = document.createElement('div');
     
 document.body.appendChild(container11);
 
-for (let i = 12; i < 15; i++) { 
-    createContainer(i);
-}
+createContainer(12, tablica12, result12);
+createContainer(13, tablica13, result13);
+createContainer(14, tablica14, result14);
 
 const container15 = document.createElement('div');
 
@@ -231,41 +235,41 @@ const container15 = document.createElement('div');
     
 document.body.appendChild(container15);
 
-for (let i = 16; i < 18; i++) { 
-    createContainer(i);
-}
+createContainer(16, tablica16, result16);
+createContainer(17, tablica17, result17);
 
-function createContainer(z) {
+function createContainer(number, initialArr, finalArr ) {
 
     
     const container = document.createElement('div');
 
     container.classList.add("container");
-    container.setAttribute("id", 'container-' + z);
+    container.setAttribute("id", 'container-' + number);
 
-    const originalArr = document.createElement('div');
+        const originalArr = document.createElement('div');
 
-        const initialArr = " tablica" + z;
-        originalArr.innerText = "Tablica " + z + initialArr;
-        originalArr.classList.add("display");
+            originalArr.setAttribute("id", 'orgArr-' + number);
+            originalArr.innerText = "Tablica " + number + ": " + initialArr;
+            originalArr.classList.add("display");
 
-    container.appendChild(originalArr);
+        container.appendChild(originalArr);
 
-    const smallButton = document.createElement('button');
+        const smallButton = document.createElement('button');
 
+            smallButton.setAttribute("id", 'smlBtn-' + number);
+            smallButton.textContent = "Get result";
+            smallButton.classList.add("smallButton");
+            smallButton.addEventListener('click', () => draw(finalArr, number));
 
-        smallButton.textContent = "Get result";
-        smallButton.classList.add("smallButton");
-        smallButton.addEventListener('click', () => draw(result + z, z));
+        container.appendChild(smallButton);
 
-    container.appendChild(smallButton);
+        const outputArr = document.createElement('div');
 
-    const outputArr = document.createElement('div');
+            outputArr.setAttribute("id", 'outArr-' + number);
+            outputArr.innerText = "Result: ";
+            outputArr.classList.add("display");
 
-        outputArr.innerText = "Result: ";
-        outputArr.classList.add("display");
-
-    container.appendChild(outputArr);
+        container.appendChild(outputArr);
     
     document.body.appendChild(container);
 
