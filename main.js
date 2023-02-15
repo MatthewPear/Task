@@ -72,222 +72,9 @@ console.log("Wynik 16 :", result16);
 const result17 = tablica17.filter(el => el * 3 > 15);
 console.log("Wynik 17 :", result17);
 
-const container1 = document.createElement('div');
-
-    container1.classList.add("container");
-    container1.setAttribute("id", 'container-1');
-
-    const originalArr1 = document.createElement('div');
-
-        originalArr1.innerText = "Tablica 1 : " + tablica1;
-        originalArr1.classList.add("display");
-
-    container1.appendChild(originalArr1);
-
-    const smallButton1 = document.createElement('button');
-
-        smallButton1.textContent = "Get result";
-        smallButton1.classList.add("smallButton");
-        smallButton1.addEventListener('click', () => draw(result1, 1));
-
-    container1.appendChild(smallButton1);
-
-    const outputArr1 = document.createElement('div');
-
-        outputArr1.innerText = "Result: ";
-        outputArr1.classList.add("display");
-
-    container1.appendChild(outputArr1);
-
-    createSquare;
-    
-document.body.appendChild(container1);
-
-const container2 = document.createElement('div');
-
-    container2.classList.add("container");
-    container2.setAttribute("id", 'container-2');
-
-    const originalArr2 = document.createElement('div');
-
-        originalArr2.innerText = "Tablica 2 : " + tablica2;
-        originalArr2.classList.add("display");
-
-    container2.appendChild(originalArr2);
-
-    const smallButton2 = document.createElement('button');
-
-        smallButton2.textContent = "Get result";
-        smallButton2.classList.add("smallButton");
-        smallButton2.addEventListener('click', () => draw(result2, 2));
-
-    container2.appendChild(smallButton2);
-
-    const outputArr2 = document.createElement('div');
-
-        outputArr2.innerText = "Result: ";
-        outputArr2.classList.add("display");
-
-    container2.appendChild(outputArr2);
-
-    createSquare;
-    
-document.body.appendChild(container2);
-
-const container3 = document.createElement('div');
-
-    container3.classList.add("container");
-    container3.setAttribute("id", 'container-3');
-
-    const originalArr3 = document.createElement('div');
-
-        originalArr3.innerText = "Tablica 3 : " + tablica3;
-        originalArr3.classList.add("display");
-
-    container3.appendChild(originalArr3);
-
-    const smallButton3 = document.createElement('button');
-
-        smallButton3.textContent = "Get result";
-        smallButton3.classList.add("smallButton");
-        smallButton3.addEventListener('click', () => draw(result3, 3));
-
-    container3.appendChild(smallButton3);
-
-    const outputArr3 = document.createElement('div');
-
-        outputArr3.innerText = "Result: ";
-        outputArr3.classList.add("display");
-
-    container3.appendChild(outputArr3);
-
-    createSquare;
-
-document.body.appendChild(container3);
-
-const container4 = document.createElement('div');
-
-    container4.classList.add("container");
-    container4.setAttribute("id", 'container-4');
-
-    const originalArr4 = document.createElement('div');
-
-        originalArr4.innerText = "Tablica 4 : " + tablica4;
-        originalArr4.classList.add("display");
-
-    container4.appendChild(originalArr4);
-
-    const smallButton4 = document.createElement('button');
-
-        smallButton4.textContent = "Get result";
-        smallButton4.classList.add("smallButton");
-        smallButton4.addEventListener('click', () => draw(result4, 4));
-
-    container4.appendChild(smallButton4);
-
-    const outputArr4 = document.createElement('div');
-
-        outputArr4.innerText = "Result: ";
-        outputArr4.classList.add("display");
-
-    container4.appendChild(outputArr4);
-
-    createSquare;
-    
-document.body.appendChild(container4);
-
-const container5 = document.createElement('div');
-
-    container5.classList.add("container");
-    container5.setAttribute("id", 'container-5');
-
-    const originalArr5 = document.createElement('div');
-
-        originalArr5.innerText = "Tablica 5 : " + tablica5;
-        originalArr5.classList.add("display");
-
-    container5.appendChild(originalArr5);
-
-    const smallButton5 = document.createElement('button');
-
-        smallButton5.textContent = "Get result";
-        smallButton5.classList.add("smallButton");
-        smallButton5.addEventListener('click', () => draw(result5, 5));
-
-    container5.appendChild(smallButton5);
-
-    const outputArr5 = document.createElement('div');
-
-        outputArr5.innerText = "Result: ";
-        outputArr5.classList.add("display");
-
-    container5.appendChild(outputArr5);
-
-    createSquare;
-    
-document.body.appendChild(container5);
-
-const container6 = document.createElement('div');
-
-    container6.classList.add("container");
-    container6.setAttribute("id", 'container-6');
-
-    const originalArr6 = document.createElement('div');
-
-        originalArr6.innerText = "Tablica 6 : " + tablica6;
-        originalArr6.classList.add("display");
-
-    container6.appendChild(originalArr6);
-
-    const smallButton6 = document.createElement('button');
-
-        smallButton6.textContent = "Get result";
-        smallButton6.classList.add("smallButton");
-        smallButton6.addEventListener('click', () => draw(result6, 6));
-
-    container6.appendChild(smallButton6);
-
-    const outputArr6 = document.createElement('div');
-
-        outputArr6.innerText = "Result: ";
-        outputArr6.classList.add("display");
-
-    container6.appendChild(outputArr6);
-
-    createSquare;
-    
-document.body.appendChild(container6);
-
-const container7 = document.createElement('div');
-
-    container7.classList.add("container");
-    container7.setAttribute("id", 'container-7');
-
-    const originalArr7 = document.createElement('div');
-
-        originalArr7.innerText = "Tablica 7 : " + tablica7;
-        originalArr7.classList.add("display");
-
-    container7.appendChild(originalArr7);
-
-    const smallButton7 = document.createElement('button');
-
-        smallButton7.textContent = "Get result";
-        smallButton7.classList.add("smallButton");
-        smallButton7.addEventListener('click', () => draw(result7, 7));
-
-    container7.appendChild(smallButton7);
-
-    const outputArr7 = document.createElement('div');
-
-        outputArr7.innerText = "Result: ";
-        outputArr7.classList.add("display");
-
-    container7.appendChild(outputArr7);
-
-    createSquare;
-    
-document.body.appendChild(container7);
+for (let i = 1; i < 8; i++) { 
+    createContainer(i);
+}
 
 const container8 = document.createElement('div');
 
@@ -295,7 +82,7 @@ const container8 = document.createElement('div');
     container8.setAttribute("id", 'container-8');
 
     const originalArr8 = document.createElement('div');
-
+        
         originalArr8.innerText = "Tablica 8 : " + tablica8;
         originalArr8.classList.add("display");
 
@@ -334,67 +121,9 @@ const container8 = document.createElement('div');
     
 document.body.appendChild(container8);
 
-const container9 = document.createElement('div');
-
-    container9.classList.add("container");
-    container9.setAttribute("id", 'container-9');
-
-    const originalArr9 = document.createElement('div');
-
-        originalArr9.innerText = "Tablica 9 : " + tablica9;
-        originalArr9.classList.add("display");
-
-    container9.appendChild(originalArr9);
-
-    const smallButton9 = document.createElement('button');
-
-        smallButton9.textContent = "Get result";
-        smallButton9.classList.add("smallButton");
-        smallButton9.addEventListener('click', () => draw(result9, 9));
-
-    container9.appendChild(smallButton9);
-
-    const outputArr9 = document.createElement('div');
-
-        outputArr9.innerText = "Result: ";
-        outputArr9.classList.add("display");
-
-    container9.appendChild(outputArr9);
-
-    createSquare;
-    
-document.body.appendChild(container9);
-
-const container10 = document.createElement('div');
-
-    container10.classList.add("container");
-    container10.setAttribute("id", 'container-10');
-
-    const originalArr10 = document.createElement('div');
-
-        originalArr10.innerText = "Tablica 10 : " + tablica10;
-        originalArr10.classList.add("display");
-
-    container10.appendChild(originalArr10);
-
-    const smallButton10 = document.createElement('button');
-
-        smallButton10.textContent = "Get result";
-        smallButton10.classList.add("smallButton");
-        smallButton10.addEventListener('click', () => draw(result10, 10));
-
-    container10.appendChild(smallButton10);
-
-    const outputArr10 = document.createElement('div');
-
-        outputArr10.innerText = "Result: ";
-        outputArr10.classList.add("display");
-
-    container10.appendChild(outputArr10);
-
-    createSquare;
-    
-document.body.appendChild(container10);
+for (let i = 9; i < 11; i++) { 
+    createContainer(i);
+}
 
 const container11 = document.createElement('div');
 
@@ -443,103 +172,12 @@ const container11 = document.createElement('div');
     
         myCounter11.innerText = "Licznik: " + tablica11.length;
     }
-
-    createSquare;
     
 document.body.appendChild(container11);
 
-const container12 = document.createElement('div');
-
-    container12.classList.add("container");
-    container12.setAttribute("id", 'container-12');
-
-    const originalArr12 = document.createElement('div');
-
-        originalArr12.innerText = "Tablica 12 : " + tablica12;
-        originalArr12.classList.add("display");
-
-    container12.appendChild(originalArr12);
-
-    const smallButton12 = document.createElement('button');
-
-        smallButton12.textContent = "Get result";
-        smallButton12.classList.add("smallButton");
-        smallButton12.addEventListener('click', () => draw(result12, 12));
-
-    container12.appendChild(smallButton12);
-
-    const outputArr12 = document.createElement('div');
-
-        outputArr12.innerText = "Result: ";
-        outputArr12.classList.add("display");
-
-    container12.appendChild(outputArr12);
-
-    createSquare;
-    
-document.body.appendChild(container12);
-
-const container13 = document.createElement('div');
-
-    container13.classList.add("container");
-    container13.setAttribute("id", 'container-13');
-
-    const originalArr13 = document.createElement('div');
-
-        originalArr13.innerText = "Tablica 13 : " + tablica13;
-        originalArr13.classList.add("display");
-
-    container13.appendChild(originalArr13);
-
-    const smallButton13 = document.createElement('button');
-
-        smallButton13.textContent = "Get result";
-        smallButton13.classList.add("smallButton");
-        smallButton13.addEventListener('click', () => draw(result13, 13));
-
-    container13.appendChild(smallButton13);
-
-    const outputArr13 = document.createElement('div');
-
-        outputArr13.innerText = "Result: ";
-        outputArr13.classList.add("display");
-
-    container13.appendChild(outputArr13);
-
-    createSquare;
-    
-document.body.appendChild(container13);
-
-const container14 = document.createElement('div');
-
-    container14.classList.add("container");
-    container14.setAttribute("id", 'container-14');
-
-    const originalArr14 = document.createElement('div');
-
-        originalArr14.innerText = "Tablica 14 : " + tablica14;
-        originalArr14.classList.add("display");
-
-    container14.appendChild(originalArr14);
-
-    const smallButton14 = document.createElement('button');
-
-        smallButton14.textContent = "Get result";
-        smallButton14.classList.add("smallButton");
-        smallButton14.addEventListener('click', () => draw(result14, 14));
-
-    container14.appendChild(smallButton14);
-
-    const outputArr14 = document.createElement('div');
-
-        outputArr14.innerText = "Result: ";
-        outputArr14.classList.add("display");
-
-    container14.appendChild(outputArr14);
-
-    createSquare;
-    
-document.body.appendChild(container14);
+for (let i = 12; i < 15; i++) { 
+    createContainer(i);
+}
 
 const container15 = document.createElement('div');
 
@@ -593,67 +231,45 @@ const container15 = document.createElement('div');
     
 document.body.appendChild(container15);
 
-const container16 = document.createElement('div');
+for (let i = 16; i < 18; i++) { 
+    createContainer(i);
+}
 
-    container16.classList.add("container");
-    container16.setAttribute("id", 'container-16');
+function createContainer(z) {
 
-    const originalArr16 = document.createElement('div');
-
-        originalArr16.innerText = "Tablica 16 : " + tablica16;
-        originalArr16.classList.add("display");
-
-    container16.appendChild(originalArr16);
-
-    const smallButton16 = document.createElement('button');
-
-        smallButton16.textContent = "Get result";
-        smallButton16.classList.add("smallButton");
-        smallButton16.addEventListener('click', () => draw(result16, 16));
-
-    container16.appendChild(smallButton16);
-
-    const outputArr16 = document.createElement('div');
-
-        outputArr16.innerText = "Result: ";
-        outputArr16.classList.add("display");
-
-    container16.appendChild(outputArr16);
-
-    createSquare;
     
-document.body.appendChild(container16);
+    const container = document.createElement('div');
 
-const container17 = document.createElement('div');
+    container.classList.add("container");
+    container.setAttribute("id", 'container-' + z);
 
-    container17.classList.add("container");
-    container17.setAttribute("id", 'container-17');
+    const originalArr = document.createElement('div');
 
-    const originalArr17 = document.createElement('div');
+        const initialArr = " tablica" + z;
+        originalArr.innerText = "Tablica " + z + initialArr;
+        originalArr.classList.add("display");
 
-        originalArr17.innerText = "Tablica 17 : " + tablica17;
-        originalArr17.classList.add("display");
+    container.appendChild(originalArr);
 
-    container17.appendChild(originalArr17);
+    const smallButton = document.createElement('button');
 
-    const smallButton17 = document.createElement('button');
 
-        smallButton17.textContent = "Get result";
-        smallButton17.classList.add("smallButton");
-        smallButton17.addEventListener('click', () => draw(result17, 17));
+        smallButton.textContent = "Get result";
+        smallButton.classList.add("smallButton");
+        smallButton.addEventListener('click', () => draw(result + z, z));
 
-    container17.appendChild(smallButton17);
+    container.appendChild(smallButton);
 
-    const outputArr17 = document.createElement('div');
+    const outputArr = document.createElement('div');
 
-        outputArr17.innerText = "Result: ";
-        outputArr17.classList.add("display");
+        outputArr.innerText = "Result: ";
+        outputArr.classList.add("display");
 
-    container17.appendChild(outputArr17);
-
-    createSquare;
+    container.appendChild(outputArr);
     
-document.body.appendChild(container17);
+    document.body.appendChild(container);
+
+}
 
 function createSquare(el, number) {
     
@@ -674,7 +290,8 @@ function draw(arrayToDraw, number) {
         
     })
 }
-// SCRATCH
+
+////////////////////// SCRATCH
 
 // function createSquare17(el) {
 
@@ -691,3 +308,423 @@ function draw(arrayToDraw, number) {
 //         createSquare17(el);
 //     })
 // }
+
+// const container1 = document.createElement('div');
+
+//     container1.classList.add("container");
+//     container1.setAttribute("id", 'container-1');
+
+//     const originalArr1 = document.createElement('div');
+
+//         originalArr1.innerText = "Tablica 1 : " + tablica1;
+//         originalArr1.classList.add("display");
+
+//     container1.appendChild(originalArr1);
+
+//     const smallButton1 = document.createElement('button');
+
+//         smallButton1.textContent = "Get result";
+//         smallButton1.classList.add("smallButton");
+//         smallButton1.addEventListener('click', () => draw(result1, 1));
+
+//     container1.appendChild(smallButton1);
+
+//     const outputArr1 = document.createElement('div');
+
+//         outputArr1.innerText = "Result: ";
+//         outputArr1.classList.add("display");
+
+//     container1.appendChild(outputArr1);
+
+//     createSquare;
+    
+// document.body.appendChild(container1);
+
+// const container2 = document.createElement('div');
+
+//     container2.classList.add("container");
+//     container2.setAttribute("id", 'container-2');
+
+//     const originalArr2 = document.createElement('div');
+
+//         originalArr2.innerText = "Tablica 2 : " + tablica2;
+//         originalArr2.classList.add("display");
+
+//     container2.appendChild(originalArr2);
+
+//     const smallButton2 = document.createElement('button');
+
+//         smallButton2.textContent = "Get result";
+//         smallButton2.classList.add("smallButton");
+//         smallButton2.addEventListener('click', () => draw(result2, 2));
+
+//     container2.appendChild(smallButton2);
+
+//     const outputArr2 = document.createElement('div');
+
+//         outputArr2.innerText = "Result: ";
+//         outputArr2.classList.add("display");
+
+//     container2.appendChild(outputArr2);
+
+//     createSquare;
+    
+// document.body.appendChild(container2);
+
+// const container3 = document.createElement('div');
+
+//     container3.classList.add("container");
+//     container3.setAttribute("id", 'container-3');
+
+//     const originalArr3 = document.createElement('div');
+
+//         originalArr3.innerText = "Tablica 3 : " + tablica3;
+//         originalArr3.classList.add("display");
+
+//     container3.appendChild(originalArr3);
+
+//     const smallButton3 = document.createElement('button');
+
+//         smallButton3.textContent = "Get result";
+//         smallButton3.classList.add("smallButton");
+//         smallButton3.addEventListener('click', () => draw(result3, 3));
+
+//     container3.appendChild(smallButton3);
+
+//     const outputArr3 = document.createElement('div');
+
+//         outputArr3.innerText = "Result: ";
+//         outputArr3.classList.add("display");
+
+//     container3.appendChild(outputArr3);
+
+//     createSquare;
+
+// document.body.appendChild(container3);
+
+// const container4 = document.createElement('div');
+
+//     container4.classList.add("container");
+//     container4.setAttribute("id", 'container-4');
+
+//     const originalArr4 = document.createElement('div');
+
+//         originalArr4.innerText = "Tablica 4 : " + tablica4;
+//         originalArr4.classList.add("display");
+
+//     container4.appendChild(originalArr4);
+
+//     const smallButton4 = document.createElement('button');
+
+//         smallButton4.textContent = "Get result";
+//         smallButton4.classList.add("smallButton");
+//         smallButton4.addEventListener('click', () => draw(result4, 4));
+
+//     container4.appendChild(smallButton4);
+
+//     const outputArr4 = document.createElement('div');
+
+//         outputArr4.innerText = "Result: ";
+//         outputArr4.classList.add("display");
+
+//     container4.appendChild(outputArr4);
+
+//     createSquare;
+    
+// document.body.appendChild(container4);
+
+// const container5 = document.createElement('div');
+
+//     container5.classList.add("container");
+//     container5.setAttribute("id", 'container-5');
+
+//     const originalArr5 = document.createElement('div');
+
+//         originalArr5.innerText = "Tablica 5 : " + tablica5;
+//         originalArr5.classList.add("display");
+
+//     container5.appendChild(originalArr5);
+
+//     const smallButton5 = document.createElement('button');
+
+//         smallButton5.textContent = "Get result";
+//         smallButton5.classList.add("smallButton");
+//         smallButton5.addEventListener('click', () => draw(result5, 5));
+
+//     container5.appendChild(smallButton5);
+
+//     const outputArr5 = document.createElement('div');
+
+//         outputArr5.innerText = "Result: ";
+//         outputArr5.classList.add("display");
+
+//     container5.appendChild(outputArr5);
+
+//     createSquare;
+    
+// document.body.appendChild(container5);
+
+// const container6 = document.createElement('div');
+
+//     container6.classList.add("container");
+//     container6.setAttribute("id", 'container-6');
+
+//     const originalArr6 = document.createElement('div');
+
+//         originalArr6.innerText = "Tablica 6 : " + tablica6;
+//         originalArr6.classList.add("display");
+
+//     container6.appendChild(originalArr6);
+
+//     const smallButton6 = document.createElement('button');
+
+//         smallButton6.textContent = "Get result";
+//         smallButton6.classList.add("smallButton");
+//         smallButton6.addEventListener('click', () => draw(result6, 6));
+
+//     container6.appendChild(smallButton6);
+
+//     const outputArr6 = document.createElement('div');
+
+//         outputArr6.innerText = "Result: ";
+//         outputArr6.classList.add("display");
+
+//     container6.appendChild(outputArr6);
+
+//     createSquare;
+    
+// document.body.appendChild(container6);
+
+// const container7 = document.createElement('div');
+
+//     container7.classList.add("container");
+//     container7.setAttribute("id", 'container-7');
+
+//     const originalArr7 = document.createElement('div');
+
+//         originalArr7.innerText = "Tablica 7 : " + tablica7;
+//         originalArr7.classList.add("display");
+
+//     container7.appendChild(originalArr7);
+
+//     const smallButton7 = document.createElement('button');
+
+//         smallButton7.textContent = "Get result";
+//         smallButton7.classList.add("smallButton");
+//         smallButton7.addEventListener('click', () => draw(result7, 7));
+
+//     container7.appendChild(smallButton7);
+
+//     const outputArr7 = document.createElement('div');
+
+//         outputArr7.innerText = "Result: ";
+//         outputArr7.classList.add("display");
+
+//     container7.appendChild(outputArr7);
+
+//     createSquare;
+    
+// document.body.appendChild(container7);
+
+// const container9 = document.createElement('div');
+
+//     container9.classList.add("container");
+//     container9.setAttribute("id", 'container-9');
+
+//     const originalArr9 = document.createElement('div');
+
+//         originalArr9.innerText = "Tablica 9 : " + tablica9;
+//         originalArr9.classList.add("display");
+
+//     container9.appendChild(originalArr9);
+
+//     const smallButton9 = document.createElement('button');
+
+//         smallButton9.textContent = "Get result";
+//         smallButton9.classList.add("smallButton");
+//         smallButton9.addEventListener('click', () => draw(result9, 9));
+
+//     container9.appendChild(smallButton9);
+
+//     const outputArr9 = document.createElement('div');
+
+//         outputArr9.innerText = "Result: ";
+//         outputArr9.classList.add("display");
+
+//     container9.appendChild(outputArr9);
+    
+// document.body.appendChild(container9);
+
+// const container10 = document.createElement('div');
+
+//     container10.classList.add("container");
+//     container10.setAttribute("id", 'container-10');
+
+//     const originalArr10 = document.createElement('div');
+
+//         originalArr10.innerText = "Tablica 10 : " + tablica10;
+//         originalArr10.classList.add("display");
+
+//     container10.appendChild(originalArr10);
+
+//     const smallButton10 = document.createElement('button');
+
+//         smallButton10.textContent = "Get result";
+//         smallButton10.classList.add("smallButton");
+//         smallButton10.addEventListener('click', () => draw(result10, 10));
+
+//     container10.appendChild(smallButton10);
+
+//     const outputArr10 = document.createElement('div');
+
+//         outputArr10.innerText = "Result: ";
+//         outputArr10.classList.add("display");
+
+//     container10.appendChild(outputArr10);
+    
+// document.body.appendChild(container10);
+
+// const container12 = document.createElement('div');
+
+//     container12.classList.add("container");
+//     container12.setAttribute("id", 'container-12');
+
+//     const originalArr12 = document.createElement('div');
+
+//         originalArr12.innerText = "Tablica 12 : " + tablica12;
+//         originalArr12.classList.add("display");
+
+//     container12.appendChild(originalArr12);
+
+//     const smallButton12 = document.createElement('button');
+
+//         smallButton12.textContent = "Get result";
+//         smallButton12.classList.add("smallButton");
+//         smallButton12.addEventListener('click', () => draw(result12, 12));
+
+//     container12.appendChild(smallButton12);
+
+//     const outputArr12 = document.createElement('div');
+
+//         outputArr12.innerText = "Result: ";
+//         outputArr12.classList.add("display");
+
+//     container12.appendChild(outputArr12);
+    
+// document.body.appendChild(container12);
+
+// const container13 = document.createElement('div');
+
+//     container13.classList.add("container");
+//     container13.setAttribute("id", 'container-13');
+
+//     const originalArr13 = document.createElement('div');
+
+//         originalArr13.innerText = "Tablica 13 : " + tablica13;
+//         originalArr13.classList.add("display");
+
+//     container13.appendChild(originalArr13);
+
+//     const smallButton13 = document.createElement('button');
+
+//         smallButton13.textContent = "Get result";
+//         smallButton13.classList.add("smallButton");
+//         smallButton13.addEventListener('click', () => draw(result13, 13));
+
+//     container13.appendChild(smallButton13);
+
+//     const outputArr13 = document.createElement('div');
+
+//         outputArr13.innerText = "Result: ";
+//         outputArr13.classList.add("display");
+
+//     container13.appendChild(outputArr13);
+    
+// document.body.appendChild(container13);
+
+// const container14 = document.createElement('div');
+
+//     container14.classList.add("container");
+//     container14.setAttribute("id", 'container-14');
+
+//     const originalArr14 = document.createElement('div');
+
+//         originalArr14.innerText = "Tablica 14 : " + tablica14;
+//         originalArr14.classList.add("display");
+
+//     container14.appendChild(originalArr14);
+
+//     const smallButton14 = document.createElement('button');
+
+//         smallButton14.textContent = "Get result";
+//         smallButton14.classList.add("smallButton");
+//         smallButton14.addEventListener('click', () => draw(result14, 14));
+
+//     container14.appendChild(smallButton14);
+
+//     const outputArr14 = document.createElement('div');
+
+//         outputArr14.innerText = "Result: ";
+//         outputArr14.classList.add("display");
+
+//     container14.appendChild(outputArr14);
+    
+// document.body.appendChild(container14);
+
+// const container16 = document.createElement('div');
+
+//     container16.classList.add("container");
+//     container16.setAttribute("id", 'container-16');
+
+//     const originalArr16 = document.createElement('div');
+
+//         originalArr16.innerText = "Tablica 16 : " + tablica16;
+//         originalArr16.classList.add("display");
+
+//     container16.appendChild(originalArr16);
+
+//     const smallButton16 = document.createElement('button');
+
+//         smallButton16.textContent = "Get result";
+//         smallButton16.classList.add("smallButton");
+//         smallButton16.addEventListener('click', () => draw(result16, 16));
+
+//     container16.appendChild(smallButton16);
+
+//     const outputArr16 = document.createElement('div');
+
+//         outputArr16.innerText = "Result: ";
+//         outputArr16.classList.add("display");
+
+//     container16.appendChild(outputArr16);
+    
+// document.body.appendChild(container16);
+
+// const container17 = document.createElement('div');
+
+//     container17.classList.add("container");
+//     container17.setAttribute("id", 'container-17');
+
+//     const originalArr17 = document.createElement('div');
+
+//         originalArr17.innerText = "Tablica 17 : " + tablica17;
+//         originalArr17.classList.add("display");
+
+//     container17.appendChild(originalArr17);
+
+//     const smallButton17 = document.createElement('button');
+
+//         smallButton17.textContent = "Get result";
+//         smallButton17.classList.add("smallButton");
+//         smallButton17.addEventListener('click', () => draw(result17, 17));
+
+//     container17.appendChild(smallButton17);
+
+//     const outputArr17 = document.createElement('div');
+
+//         outputArr17.innerText = "Result: ";
+//         outputArr17.classList.add("display");
+
+//     container17.appendChild(outputArr17);
+    
+// document.body.appendChild(container17);
