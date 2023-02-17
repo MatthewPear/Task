@@ -39,23 +39,23 @@
     line-height: 20px;
     vertical-align: middle;
 }
-.squareP{
-    height: 10px;
+.squareRed{
+    /* height: 10px;
     width: auto;
     padding: 5px;
     display: inline-block;
     margin: 10px 10px;
     line-height: 10px;
-    border: solid 1px #000;
+    border: solid 1px #000; */
     background-color: red;
 }
-.squareN{
-    height: 10px;
+.squareGreen{
+    /* height: 10px;
     width: auto;
     padding: 5px;
     display: inline-block;
     margin: 10px 10px;
     line-height: 10px;
-    border: solid 1px #000;
+    border: solid 1px #000; */
     background-color: green;
 }

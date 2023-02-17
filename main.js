@@ -79,55 +79,18 @@ createContainer(4, tablica4, result4);
 createContainer(5, tablica5, result5);
 createContainer(6, tablica6, result6);
 createContainer(7, tablica7, result7);
+createContainer(8, tablica8, [result8]);
 createContainer(9, tablica9, result9);
 createContainer(10, tablica10, result10);
+createContainer(11, tablica11, tablica11);
 createContainer(12, tablica12, result12);
 createContainer(13, tablica13, result13);
 createContainer(14, tablica14, result14);
+createContainer(15, tablica15, tablica15, true);
 createContainer(16, tablica16, result16);
-createContainer(17, tablica17, result17);
+createContainer(17, tablica17, result17, true);
 
-const container8 = document.createElement('div');
-container8.classList.add("container");
-container8.setAttribute("id", 'container-8');
-
-const originalArr8 = document.createElement('div');
-originalArr8.innerText = "Tablica 8 : " + tablica8;
-originalArr8.classList.add("display");
-container8.appendChild(originalArr8);
-
-const smallButton8 = document.createElement('button');
-smallButton8.textContent = "Get result";
-smallButton8.classList.add("smallButton");
-smallButton8.addEventListener('click', () => draw8());
-container8.appendChild(smallButton8);
-
-const outputArr8 = document.createElement('div');
-outputArr8.innerText = "Result: ";
-outputArr8.classList.add("display");
-container8.appendChild(outputArr8);
-
-function createSquare8(el) {
-    const mySquare8 = document.createElement('div');
-    mySquare8.textContent = el;
-    mySquare8.classList.add("square");
-    container8.appendChild(mySquare8);   
-    }
-function draw8() {
-    [result8].forEach((el) => {
-        createSquare8(el);
-    })
-}    
-document.body.appendChild(container8);
-
-const container11 = document.createElement('div');
-container11.classList.add("container");
-container11.setAttribute("id", 'container-11');
-
-const originalArr11 = document.createElement('div');
-originalArr11.innerText = "Tablica 11 : " + tablica11;
-originalArr11.classList.add("display");
-container11.appendChild(originalArr11);
+const container11 = document.getElementById('container-11');
 
 const smallButton11a = document.createElement('button');
 smallButton11a.textContent = "Add";
@@ -139,64 +102,13 @@ const myCounter11 = document.createElement('div');
 myCounter11.innerText = "Licznik: " + tablica11.length;
 myCounter11.classList.add("counter");
 container11.appendChild(myCounter11);
-
-const smallButton11b = document.createElement('button');
-smallButton11b.textContent = "Draw result";
-smallButton11b.classList.add("smallButton");
-smallButton11b.addEventListener('click', () => draw(tablica11, 11));
-container11.appendChild(smallButton11b);
-
-const outputArr11 = document.createElement('div');
-outputArr11.innerText = "Result: ";
-outputArr11.classList.add("display");
-container11.appendChild(outputArr11);
     
 function buttonClickHandler11(y) {
     tablica11.push(y);
     myCounter11.innerText = "Licznik: " + tablica11.length;
 }    
-document.body.appendChild(container11);
 
-const container15 = document.createElement('div');
-container15.classList.add("container");
-container15.setAttribute("id", 'container-15');
-
-const originalArr15 = document.createElement('div');
-originalArr15.innerText = "Tablica 15 : " + tablica15;
-originalArr15.classList.add("display");
-container15.appendChild(originalArr15);
-
-const smallButton15 = document.createElement('button');
-smallButton15.textContent = "Get result";
-smallButton15.classList.add("smallButton");
-smallButton15.addEventListener('click', () => draw15());
-container15.appendChild(smallButton15);
-
-const outputArr15 = document.createElement('div');
-outputArr15.innerText = "Result: ";
-outputArr15.classList.add("display");
-container15.appendChild(outputArr15);
-
-function createSquare15(el) {
-    const mySquare15 = document.createElement('div');
-    mySquare15.textContent = el;
-    container15.appendChild(mySquare15);
-
-    if (el % 2 === 0) {
-        mySquare15.classList.add("squareP");    
-        } else {
-        mySquare15.classList.add("squareN");
-    }
-}
-
-function draw15() {
-    tablica15.forEach((el) => {
-        createSquare15(el);
-    })
-}    
-document.body.appendChild(container15);
-
-function createContainer(number, initialArr, finalArr ) {
+function createContainer(number, initialArr, finalArr, colorDraw) {
     const container = document.createElement('div');
     container.classList.add("container");
     container.setAttribute("id", 'container-' + number);
@@ -211,7 +123,7 @@ function createContainer(number, initialArr, finalArr ) {
     smallButton.setAttribute("id", 'smlBtn-' + number);
     smallButton.textContent = "Get result";
     smallButton.classList.add("smallButton");
-    smallButton.addEventListener('click', () => draw(finalArr, number));
+    smallButton.addEventListener('click', () => draw(finalArr, number, colorDraw));
     container.appendChild(smallButton);
 
     const outputArr = document.createElement('div');
@@ -223,22 +135,54 @@ function createContainer(number, initialArr, finalArr ) {
     document.body.appendChild(container);
 }
 
-function createSquare(el, number) {
+function createSquare(el, number, drawColor) {
     const myContainer = document.getElementById('container-' + number);
 
     const mySquare = document.createElement('div');
     mySquare.textContent = el;
     mySquare.classList.add("square");    
     myContainer.appendChild(mySquare);   
+    // if (number === 15 || number === 17) { 
+    if (drawColor === true) { 
+        if (el % 2 === 0) {
+            mySquare.classList.add("squareRed");    
+        } else {
+            mySquare.classList.add("squareGreen");
+        }
+    }    
 }
 
-function draw(arrayToDraw, number) {
+function draw(arrayToDraw, number, drawColor) {
     arrayToDraw.forEach((el) => {
-        createSquare(el, number);    
+        createSquare(el, number, drawColor);    
     })
 }
 
 ////////////////////// SCRATCH
+
+// const allMyTasks = [
+//     tablica1,
+//     tablica2,
+//     tablica3,
+//     tablica4,
+//     tablica5,
+//     tablica6,
+//     tablica7,
+//     tablica8,
+//     tablica9,
+//     tablica10,
+//     tablica11,
+//     tablica12,
+//     tablica13,
+//     tablica14,
+//     tablica15,
+//     tablica16,
+//     tablica17
+// ]
+
+// allMyTasks.forEach((el) => {
+
+// }
 
 // function createSquare17(el) {
 
@@ -473,6 +417,39 @@ function draw(arrayToDraw, number) {
     
 // document.body.appendChild(container7);
 
+// const container8 = document.createElement('div');
+// container8.classList.add("container");
+// container8.setAttribute("id", 'container-8');
+
+// const originalArr8 = document.createElement('div');
+// originalArr8.innerText = "Tablica 8 : " + tablica8;
+// originalArr8.classList.add("display");
+// container8.appendChild(originalArr8);
+
+// const smallButton8 = document.createElement('button');
+// smallButton8.textContent = "Get result";
+// smallButton8.classList.add("smallButton");
+// smallButton8.addEventListener('click', () => draw([result8], 8));
+// container8.appendChild(smallButton8);
+
+// const outputArr8 = document.createElement('div');
+// outputArr8.innerText = "Result: ";
+// outputArr8.classList.add("display");
+// container8.appendChild(outputArr8);
+
+// function createSquare8(el) {
+//     const mySquare8 = document.createElement('div');
+//     mySquare8.textContent = el;
+//     mySquare8.classList.add("square");
+//     container8.appendChild(mySquare8);   
+//     }
+// function draw8() {
+//     [result8].forEach((el) => {
+//         createSquare8(el);
+//     })
+// }    
+// document.body.appendChild(container8);
+
 // const container9 = document.createElement('div');
 
 //     container9.classList.add("container");
@@ -530,6 +507,28 @@ function draw(arrayToDraw, number) {
 //     container10.appendChild(outputArr10);
     
 // document.body.appendChild(container10);
+
+// const container11 = document.createElement('div');
+// container11.classList.add("container");
+// container11.setAttribute("id", 'container-11');
+
+// const originalArr11 = document.createElement('div');
+// originalArr11.innerText = "Tablica 11 : " + tablica11;
+// originalArr11.classList.add("display");
+// container11.appendChild(originalArr11);
+
+// const smallButton11b = document.createElement('button');
+// smallButton11b.textContent = "Draw result";
+// smallButton11b.classList.add("smallButton");
+// smallButton11b.addEventListener('click', () => draw(tablica11, 11));
+// container11.appendChild(smallButton11b);
+
+// const outputArr11 = document.createElement('div');
+// outputArr11.innerText = "Result: ";
+// outputArr11.classList.add("display");
+// container11.appendChild(outputArr11);
+
+// document.body.appendChild(container11);
 
 // const container12 = document.createElement('div');
 
@@ -617,6 +616,46 @@ function draw(arrayToDraw, number) {
 //     container14.appendChild(outputArr14);
     
 // document.body.appendChild(container14);
+
+// const container15 = document.createElement('div');
+// container15.classList.add("container");
+// container15.setAttribute("id", 'container-15');
+
+// const originalArr15 = document.createElement('div');
+// originalArr15.innerText = "Tablica 15 : " + tablica15;
+// originalArr15.classList.add("display");
+// container15.appendChild(originalArr15);
+
+// const smallButton15 = document.createElement('button');
+// smallButton15.textContent = "Get result";
+// smallButton15.classList.add("smallButton");
+// smallButton15.addEventListener('click', () => draw(tablica15, 15));
+// container15.appendChild(smallButton15);
+
+// const outputArr15 = document.createElement('div');
+// outputArr15.innerText = "Result: ";
+// outputArr15.classList.add("display");
+// container15.appendChild(outputArr15);
+
+// function createSquare15(el) {
+//     const mySquare15 = document.createElement('div');
+//     mySquare15.textContent = el;
+//     mySquare15.classList.add("square"); 
+//     container15.appendChild(mySquare15);
+
+//     if (el % 2 === 0) {
+//         mySquare15.classList.add("squareRed");    
+//     } else {
+//         mySquare15.classList.add("squareGreen");
+//     }
+// }
+
+// function draw15() {
+//     tablica15.forEach((el) => {
+//         createSquare15(el);
+//     })
+// }    
+// document.body.appendChild(container15);
 
 // const container16 = document.createElement('div');
 
